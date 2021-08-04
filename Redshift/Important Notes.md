@@ -37,3 +37,47 @@
 #### Securely storing credentials for Redshift
 1. You can use both AWS System Manager Parameter Store or AWS Secrets Manager
 2. If there is a cost requirement, choose parameter store to not incur in additional charges.
+
+
+#### Federating single sign-on access to your Cluster
+- Use third party tools like PingIdentity, ADFS, Okta, Azure AD or other SAML browser base identity providers.
+- You have to setup groups in one of those providers
+- You have to create a identity provider inside the iam
+
+
+1. *Workflow:*
+- User send a request to the Identity Provider
+- The identity provider validates the user and if the user is a valid user, it will receive a SAML Assertion.
+- This SAML assertion is used to call STS with the function AssumeRoleWithSAML.
+- STS deliver temporary user credentials to the user.
+
+
+#### Queries hanging when you connect from outside an Amazon EC2
+
+Most of the text in this section were extracted as is from this [webpage](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-firewall-guidance.html).
+
+##### Example issue
+
+Your client connection to the database appears to hang or timeout when running long queries, such as a COPY command. In this case, you might observe that the Amazon Redshift console displays that the query has completed, but the client tool itself still appears to be running the query. The results of the query might be missing or incomplete depending on when the connection stopped.
+
+##### Potential cause
+TCP/IP timeout
+
+##### AWS Recommendations:
+-   Increase client system values that deal with TCP/IP timeouts. Make these changes on the computer you are using to connect to your cluster. The timeout period should be adjusted for your client and network. For more information, see [Change TCP/IP timeout settings](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-firewall-guidance.html#connecting-firewall-guidance.change-tcpip-settings).
+    
+-   Optionally, set keepalive behavior at the DSN level. For more information, see [Change DSN timeout settings](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-firewall-guidance.html#connecting-firewall-guidance.change-dsn-settings).
+
+
+##### Parameters at DNS Level:
+**KeepAlivesCount**
+
+The number of TCP keepalive packets that can be lost before the connection is considered broken.
+
+**KeepAlivesIdle**
+
+The number of seconds of inactivity before the driver sends a TCP keepalive packet.
+
+**KeepAlivesInterval**
+
+The number of seconds between each TCP keepalive retransmission.

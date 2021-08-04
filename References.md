@@ -10,6 +10,8 @@
 ### EMR and Kinesis Integration  
 [Spark Streaming + Kinesis Integration](http://spark.apache.org/docs/latest/streaming-kinesis-integration.html)  
   
+  
+  
 ### EMR  
 [Plan Instance Guide](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-instances-guidelines.html)  
 [AutoScaling](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-scale-on-demand.html)  
@@ -18,6 +20,7 @@
 [High Availability](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-ha-applications.html)  
 [Authenticate to Amazon EMR Cluster Nodes](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-authenticate-cluster-connections.html)  
 [EMR Kerberos Authentication](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-kerberos.html)  
+[AWS Service Catalog](https://aws.amazon.com/blogs/big-data/build-a-self-service-environment-for-each-line-of-business-using-amazon-emr-and-aws-service-catalog/)  
   
 ### DynamoDB  
 [Choosing the right DynamoDB Partition Key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-design.html)  
@@ -42,13 +45,16 @@
 [HSM](https://docs.amazonaws.cn/en_us/redshift/latest/mgmt/changing-cluster-encryption.html)  
 [Connecting from outside of Amazon EC2](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-firewall-guidance.html)  
 [Federating Single Sign-On Access to your Redshift Cluster](https://aws.amazon.com/blogs/big-data/federating-single-sign-on-access-to-your-amazon-redshift-cluster-with-pingidentity/)  
+[Federated Database User authentication with IAM and Redshift](federate-database-user-authentication-easily-with-iam-and-amazon-redshift)  
 [Redshift-S3 Cross Account](https://aws.amazon.com/premiumsupport/knowledge-center/redshift-s3-cross-account/)  
+[Database Auditing](https://docs.aws.amazon.com/redshift/latest/mgmt/db-auditing.html)  
   
 ### Quicksight  
 [Working with ML Insights](https://docs.aws.amazon.com/quicksight/latest/user/making-data-driven-decisions-with-ml-in-quicksight.html)  
 [Detecting Outliers with ML Powered Anomaly Detection](https://docs.aws.amazon.com/quicksight/latest/user/anomaly-detection.html)  
 [Amazon Athena supports for Quicksight](https://aws.amazon.com/about-aws/whats-new/2016/12/amazon-quicksight-adds-support-for-amazon-athena/)  
 [Working with Data Sources](https://docs.aws.amazon.com/quicksight/latest/user/working-with-data-sources.html)  
+[Supported Data Sources](https://docs.aws.amazon.com/quicksight/latest/user/supported-data-sources.html)  
 [SPICE Limitations](https://docs.aws.amazon.com/quicksight/latest/user/create-a-database-data-set.html)  
   
 ### AWS Config  
@@ -68,7 +74,7 @@
   
 ### AWS Kinesis Firehose  
 [Troubleshooting](https://docs.aws.amazon.com/firehose/latest/dev/troubleshooting.html)  
-[Sending Data to an Amazon Kinesis Firehose Delivery Stream](https://docs.aws.amazon.com/firehose/latest/dev/basic-write.html) 
+[Sending Data to an Amazon Kinesis Firehose Delivery Stream](https://docs.aws.amazon.com/firehose/latest/dev/basic-write.html)   
 [Monitoring using CloudWatch Metrics](https://docs.aws.amazon.com/firehose/latest/dev/monitoring-with-cloudwatch-metrics.html)  
 [Kinesis Firehose Tagging](https://docs.aws.amazon.com/firehose/latest/dev/firehose-tagging.html)  
 [Kinesis Firehose Small Files](https://aws.amazon.com/premiumsupport/knowledge-center/kinesis-small-files-s3/)  
@@ -82,11 +88,16 @@
 ### AWS Glue  
 [Using AWS RDS as a External Hive Metastore](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive-metastore-external.html)  
 [Machine Learning Transforms on the AWS Glue Console](https://docs.aws.amazon.com/glue/latest/dg/console-machine-learning-transforms.html)  
+[Glue Context Class](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pyspark-extensions-glue-context.html)  
   
 ### AWS Kinesis Data Analytics  
 [Reference Data Source](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/API_ReferenceDataSource.html)  
 [Output Lambda](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works-output-lambda.html)  
   
 ### Elastic Search Service  
+[Import and Export Kibana Dashboards using Amazon ES](https://aws.amazon.com/blogs/big-data/export-and-import-kibana-dashboards-with-amazon-es/)  
+[Migrate Amazon ES Domain](https://aws.amazon.com/premiumsupport/knowledge-center/migrate-amazon-es-domain/)  
+[How to Achieve Multi-Region Data Replication in Elastic Search](https://akhiljain01.medium.com/how-to-achieve-multi-region-data-replication-in-elasticsearch-80b58280a107#:~:text=Elasticsearch%20is%20not%20a%20multi,data%20into%20both%20deployments%20successfully.)  
 [How many shards do I need](https://aws.amazon.com/blogs/database/get-started-with-amazon-elasticsearch-service-how-many-shards-do-i-need/)  
 [Delivering data to an Elastic Search Cluster in another account using Kinesis Firehose](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html#cross-account-delivery-es)  
+[Perform near-real time analytics on Streaming data with Elastic Search](https://aws.amazon.com/blogs/big-data/perform-near-real-time-analytics-on-streaming-data-with-amazon-kinesis-and-amazon-elasticsearch-service/)  
