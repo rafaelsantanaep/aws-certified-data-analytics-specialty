@@ -37,6 +37,13 @@ Available Metrics:
 |SubscribeToShardEvent.Success||
 |WriteProvisionedThroughputExceeded|WriteProvisionedThroughputExceeded|
 
+#### Kinesis - Lambda
+##### Paralelization Factor
+- Allow that multiple lambdas process the data of a single shard, this is useful when you're using a Enhanced Fan-Out shards and need to speed up the processing.
+- Since multiple lambda will be reading from the same shard, the order will not be guaranteed.
+- 
+
+
 
 ### Kinesis Firehose
 
