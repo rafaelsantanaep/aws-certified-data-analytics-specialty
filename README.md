@@ -1,5 +1,5 @@
 # aws-certified-data-analytics-specialty
-I have passed the AWS Certified Data Analytics Specialty Exam and, along the way,  I had to do a lot of practice exams provided by:
+I have passed the AWS Certified Data Analytics Specialty Exam and, along the way,  I had to do a lot of practice exams provided by:  
 [Whizlabs](https://www.whizlabs.com/aws-certified-data-analytics-specialty/)  
 [Tutoriais Dojo](https://www.udemy.com/course/aws-certified-data-analytics-specialty-practice-exams-amazon/)  
 [Sundog Education](https://www.udemy.com/course/aws-data-analytics/)  
